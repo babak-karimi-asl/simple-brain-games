@@ -1,90 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ear Training</title>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ear Training</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-
-
-
-<audio id="note1s"><source src="piano_ogg/C.ogg" type="audio/ogg" /></audio>
-<audio id="note2s"><source src="piano_ogg/Csharp.ogg" type="audio/ogg" /></audio>
-<audio id="note3s"><source src="piano_ogg/D.ogg" type="audio/ogg" /></audio>
-<audio id="note4s"><source src="piano_ogg/Dsharp.ogg" type="audio/ogg" /></audio>
-<audio id="note5s"><source src="piano_ogg/E.ogg" type="audio/ogg" /></audio>
-<audio id="note6s"><source src="piano_ogg/F.ogg" type="audio/ogg" /></audio>
-<audio id="note7s"><source src="piano_ogg/Fsharp.ogg" type="audio/ogg" /></audio>
-<audio id="note8s"><source src="piano_ogg/G.ogg" type="audio/ogg" /></audio>
-<audio id="note9s"><source src="piano_ogg/Gsharp.ogg" type="audio/ogg" /></audio>
-<audio id="note10s"><source src="piano_ogg/A.ogg" type="audio/ogg" /></audio>
-<audio id="note11s"><source src="piano_ogg/Asharp.ogg" type="audio/ogg" /></audio>
-<audio id="note12s"><source src="piano_ogg/B.ogg" type="audio/ogg" /></audio>
-
-
-
+<div id="sounds"></div>
 <div id="piano-place">
+    <div class="piano-key-container">
+        <div class="piano-white-key " data-key="c"></div>
+        <div class="piano-white-key " data-key="d"></div>
+        <div class="piano-white-key " data-key="e"></div>
+        <div class="piano-white-key" data-key="f"></div>
+        <div class="piano-white-key " data-key="g"></div>
+        <div class="piano-white-key " data-key="a"></div>
+        <div class="piano-white-key " data-key="b"></div>
 
-<div class="piano-key-container">
-
-      <div class="piano-white-key " id="piano-C-key">  </div>
-      <div class="piano-white-key " id="piano-D-key">  </div>
-      <div class="piano-white-key " id="piano-E-key">  </div>
-      <div class="piano-white-key" id="piano-F-key">  </div>
-      <div class="piano-white-key " id="piano-G-key">  </div>
-      <div class="piano-white-key " id="piano-A-key">  </div>      
-      <div class="piano-white-key " id="piano-B-key">  </div>
-
-
-      <div class="piano-key-container sharp-keys ">
-            <div class="piano-black-key" id="piano-Csharp-key">  </div>
-            <div class="piano-black-key" id="piano-Dsharp-key">  </div>
-            <div class="piano-black-invisible" >  </div>
-
-            <div class="piano-black-key" id="piano-Fsharp-key">  </div>
-            <div class="piano-black-key" id="piano-Gsharp-key">  </div>
-            <div class="piano-black-key" id="piano-Asharp-key">  </div>
-      </div>
-
-
+        <div class="piano-key-container sharp-keys ">
+            <div class="piano-black-key" data-key="csharp"></div>
+            <div class="piano-black-key" data-key="dsharp"></div>
+            <div class="piano-black-invisible"></div>
+            <div class="piano-black-key" data-key="fsharp"></div>
+            <div class="piano-black-key" data-key="gsharp"></div>
+            <div class="piano-black-key" data-key="asharp"></div>
+        </div>
+    </div>
 </div>
 
-
-</div>
-
-
-
-
-
-
-    <div class="game-buttons-container">
-      <div id="game-start-id" class="game-button">
-      New
-      </div>
-
-      <div id="played-key-1"></div>
-      <div id="played-key-2"></div>
-
-
-      <div id="play-again-id" class="game-button">
-      Play Again
-      </div>
-
-
-      <div id="show-answer-id" class="game-button">
-      Show Answer
-      </div>
-
-
-
-
-
+<div class="game-buttons-container">
+    <div id="game-start-id" class="game-button">
+        New
     </div>
 
-    <script src="index.js" ></script>
+    <div id="played-key-1"></div>
+    <div id="played-key-2"></div>
+
+    <div id="play-again-id" class="game-button">
+        Play Again
+    </div>
+
+    <div id="show-answer-id" class="game-button">
+        Show Answer
+    </div>
+</div>
+
+<script src="index.js"></script>
+
 </body>
 </html>

@@ -110,12 +110,12 @@
     opacity:0.2;
 }
 
-.selection-border
+.correct
 {
     border:4px solid #57c71e;
 }
 
-.selection-border-wrong
+.wrong
 {
     border:4px solid #c71e1e;
 }
